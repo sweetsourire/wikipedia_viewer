@@ -1,0 +1,76 @@
+* {
+    font-family: 'Cormorant Garamond', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top:30px;
+
+}
+
+
+.fa {
+    display: inline-block;
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #4c4c4c;
+}
+
+.fa.change-icon:hover:before {
+    content: "\f074";
+    color: #ffd8d8;
+}
+
+a:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+a:hover {
+    text-decoration: inherit;
+    color: #ffd8d8;
+    cursor: auto;
+}
+
+#search {
+    margin-top: 30px;
+}
+
+.title:hover {
+    color:#ffd8d8;
+    cursor: pointer;
+}
+
+.title {
+    width: 300px;
+}
+
+.results {
+    width: 300px;
+    margin: 10px auto 10px auto;
+    padding:10px;
+}
+
+.description {
+    margin-top: 10px;
+    display: none;
+}
+.wikilink {
+    text-align: right;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+
+input { 
+    padding: 5px;
+    font-size: 13px;
+    text-align: center;
+}

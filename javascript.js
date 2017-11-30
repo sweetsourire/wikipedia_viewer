@@ -15,7 +15,7 @@ $(document).ready(function () {
              success: function (json) {
                 results = json[1]
                 if(results.length){
-                    for (var i = 0; i < json[1].length; i++) {
+                    for (var i = 0; i < results.length; i++) {
                          $("#results").append(
                             "<div class=\"results\"><div class=\"title\">" + json[1][i] + "</div>" +
                             "<div class=\"description\">" + json[2][i] + 

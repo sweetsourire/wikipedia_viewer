@@ -17,7 +17,7 @@ $(document).ready(function () {
                 if(results.length){
                     for (var i = 0; i < results.length; i++) {
                          $("#results").append(
-                            "<div class=\"results\"><div class=\"title\">" + json[1][i] + "</div>" +
+                            "<div class=\"results\"><div class=\"title\">" + results[i] + "</div>" +
                             "<div class=\"description\">" + json[2][i] + 
                             "<a target=\"_blank\"href=\"" + json[3][i] + "\"><div class=\"wikilink\"> Go to article </div></a>" + 
                             "</div></div>");

@@ -9,13 +9,12 @@ $(document).ready(function () {
 
      form.onsubmit = function () {
          $("#results").html("");
-         $("#results").toggle("slow");
          $.ajax({
              url: "https://en.wikipedia.org/w/api.php?action=opensearch&search=" + form.keyword.value + "&limit=5&namespace=0&format=json",
              dataType: 'jsonp',
              success: function (json) {
                 results = json[1]
-                if(results && results.length){
+                if(results.length){
                     for (var i = 0; i < json[1].length; i++) {
                          $("#results").append(
                             "<div class=\"results\"><div class=\"title\">" + json[1][i] + "</div>" +
